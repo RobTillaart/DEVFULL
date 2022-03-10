@@ -21,6 +21,7 @@
 // assertNull(actual)
 // assertNotNull(actual)
 
+
 #include <ArduinoUnitTests.h>
 
 
@@ -39,7 +40,7 @@ unittest_teardown()
 
 unittest(test_all)
 {
-  DEFNULL df;
+  DEVFULL df;
 
   assertEqual(0xFFFFFFFF, df.available());
   assertEqual(0x00000000, df.peek());
