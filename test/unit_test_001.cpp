@@ -46,9 +46,9 @@ unittest(test_all)
   assertEqual(0x00000000, df.peek());
   assertEqual(0x00000000, df.read());
   assertEqual(-28, df.write('a'));
-  assertEqual(-28, df.write("hello\n", 6));
+  assertEqual(-28, df.write((const char *) "hello\n", 6));
   assertEqual(11,  df.print("hello world"));
-  assertEqua1(11,  df.println("hello world"));
+  assertEqual(11,  df.println("hello world"));
 }
 
 unittest_main()
