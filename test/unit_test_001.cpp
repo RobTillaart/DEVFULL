@@ -42,13 +42,13 @@ unittest(test_all)
 {
   DEVFULL df;
 
-  assertEqual(0xFFFFFFFF, df.available());
-  assertEqual(0x00000000, df.peek());
-  assertEqual(0x00000000, df.read());
+  assertEqual(0x7FFF, df.available());
+  assertEqual(0x0000, df.peek());
+  assertEqual(0x0000, df.read());
   assertEqual(-28, df.write('a'));
   assertEqual(-28, df.write((const uint8_t*) "hello\n", 6));
-  assertEqual(11,  df.print("hello world"));
-  assertEqual(11,  df.println("hello world"));
+  assertEqual(-28,  df.print("hello world"));
+  assertEqual(-56,  df.println("hello world"));
 }
 
 unittest_main()
