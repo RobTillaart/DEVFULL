@@ -32,8 +32,9 @@ See - https://en.wikipedia.org/wiki//dev/full
 - **int peek()** always returns 0.
 - **int read()** always returns 0.
 - **void flush()** does nothing but keeps some compilers happy.
-- **size_t write(const uint8_t data)** returns -28 (ENOSPC).
-- **size_t write(const uint8_t \*buffer, size_t size)** implements print interface. returns -28 (ENOSPC).
+- **size_t write(const uint8_t data)** always returns -28 (ENOSPC).
+- **size_t write(const uint8_t \*buffer, size_t size)** implements print interface. 
+Always returns -28 (ENOSPC).
 
 
 ## Error code
