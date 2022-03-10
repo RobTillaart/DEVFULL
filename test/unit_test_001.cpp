@@ -48,7 +48,7 @@ unittest(test_all)
   assertEqual(-28, df.write('a'));
   assertEqual(-28, df.write((const uint8_t*) "hello\n", 6));
   assertEqual(-28,  df.print("hello world"));
-  assertEqual(-56,  df.println("hello world"));
+  assertEqual(-56,  df.println("hello world"));   //  -56 ==> two underlying write calls...
 }
 
 unittest_main()
