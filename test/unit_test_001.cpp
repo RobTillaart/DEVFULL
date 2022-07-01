@@ -42,7 +42,7 @@ unittest(test_all)
 {
   DEVFULL df;
 
-  assertEqual(0x7FFF, df.available());
+  assertEqual(INT_MAX, df.available());
   assertEqual(0x0000, df.peek());
   assertEqual(0x0000, df.read());
   assertEqual(-28, df.write('a'));
