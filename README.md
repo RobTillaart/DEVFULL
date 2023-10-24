@@ -26,6 +26,13 @@ This causes a return value of n x -28 ==> mostly a number in the 65xxx range
 See - https://en.wikipedia.org/wiki//dev/full
 
 
+#### Related
+
+- https://github.com/RobTillaart/DEVFULL
+- https://github.com/RobTillaart/DEVNULL
+- https://github.com/RobTillaart/DEVRANDOM
+
+
 ## Interface
 
 ```cpp
